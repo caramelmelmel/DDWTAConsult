@@ -15,6 +15,6 @@
 1. Click on the issues tab, click on New Issue. 
 2. Click on the specific issue that you have so that you can ask me anything. 
 3. Fill in the title of the issue but do not remove the default title template for example, "[conceptual] ..." instead add on. 
-4. To know how to ask in the specific format please refer to the issue that I have created. 
+4. To know how to ask in the specific format please refer to the [issue](https://github.com/caramelmelmel/DDWTAConsult/issues/1) that I have created. 
 5. I will close the issue if the question is answered. 
 6. You can still view closed issues by clicking the Closed tab. 
