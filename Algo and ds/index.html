@@ -1,0 +1,149 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Algorithms and Data Structures</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="Algo and ds"
+                  title="Algorithms and Data Structures"
+                  environment="web"
+                  feedback-link="https://github.com/googlecodelabs/your-first-pwapp/issues">
+    
+      <google-codelab-step label="Introduction" duration="4">
+        <p><strong>Last Updated:</strong> 2021-10-08</p>
+<h2 is-upgraded><strong>What is an algorithm?</strong></h2>
+<p>An algorithm is basically a <strong>step by step </strong>process. It&#39;s just like your parents teaching you how to first crawl then walk then run. In this tutorial, we are going to summarise what is being taught in class for algorithms and data structures.</p>
+<h3 is-upgraded><strong>Idea of computational complexity</strong></h3>
+<p>Computational Complexity involves both the usage of time complexity as well as space complexity. </p>
+<p><strong>Time complexity</strong> is the concept of how the algorithm performs on the amount of data as represented by n. In most cases for time complexity, we consider the <strong>worst case </strong>and less of the best and the average case. We would obviously want to limit the amount of time we spend on running a program. This can hold up resources of our computer. Obviously, for those of you who intend to pursue a degree from ISTD and ESD, you would have to take note of this also. </p>
+<p class="image-container"><img style="width: 469.50px" src="img/bd9cbf449daeded6.png"></p>
+<p>The Figure above shows how time complexity is measured. What you have to know or takeaway is your mathematical knowledge of how to draw graphs. For example, the linear graph y = x and the other graphs like y = log(n) and so on and so forth. n represents the number of elements in general. So obviously, when you deal with <strong>only</strong> one element, your time complexity is O(1) this is the best case scenario. We will always try to aim for this. Based on the graph above, we can see that as the number of elements increase to a very large number (we may be talking more than millions in the present day), O(n!) performs the worst as compared to O(1) which performs the best. </p>
+<p>If you have yet to understand any of the above, know that the <strong>less number of steps that you have to take the better</strong>. More often than not, the number of steps is represented by T(n). </p>
+<p><strong>Space complexity</strong>, we consider less of it unless our computer is very limited in space (eg. If you are running a lot of things at the same time on a 4GB ram). Is the amount of space taken to run the program. More space taken, the worse it can be.</p>
+<h3 is-upgraded>Data Structures</h3>
+<p>Data structures are specialised format for storing, retrieving and performing operations on them. They are not the same as datatypes! Datatypes are things like integer. Is integer somewhere you store your data? Obviously no! It&#39;s a representation of a number as to how things are stored in the computer&#39;s memory.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Time complexity of python functions" duration="2">
+        <h2 is-upgraded><strong>Compiled list to know</strong></h2>
+<p>Python is one of the things that you can &#34;hide&#34; because these inbuilt functions are highly abstracted and most of the time we are implementing them without knowing what the inbuilt functions do.</p>
+<aside class="special"><p><strong>Note:</strong> This is only some of the more common examples and the list is non exhaustive. As a potential computer scientist, you have to know what goes behind the functions that you implement in a programming language.</p>
+</aside>
+<table>
+<tr><td colspan="1" rowspan="1"><p><strong>Syntax of inbuilt</strong></p>
+</td><td colspan="1" rowspan="1"><p><strong>Description</strong></p>
+</td><td colspan="1" rowspan="1"><p><strong>Time Complexity</strong></p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>.append()</p>
+</td><td colspan="1" rowspan="1"><p>Adds an element to the end of a python list</p>
+</td><td colspan="1" rowspan="1"><p>O(n) You do this for each element for that number of elements. Hence, it&#39;s O(n)</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>For i in range(n):</p>
+</td><td colspan="1" rowspan="1"><p>A loop. Something that repeats itself for that number of times or can go on forever.</p>
+</td><td colspan="1" rowspan="1"><p>O(n) You do this for that number of times. Hence, in general it can be O(n).</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>For i in range(n):</p>
+<p>    For i in range(k):</p>
+</td><td colspan="1" rowspan="1"><p>A nested for loop. You repeat what&#39;s inside the inner loop first then what&#39;s inside the outer loop.</p>
+</td><td colspan="1" rowspan="1"><p>O(n^2) You do this for what&#39;s inside for n times then what&#39;s outside for n times. Hence the number of steps is quadratic.</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>a.sort()</p>
+</td><td colspan="1" rowspan="1"><p>A is a list and the sorting functions in python sort in increasing order unless you set the reverse to be true.</p>
+</td><td colspan="1" rowspan="1"><p>O(nlogn). You can read the implementation of them. Perhaps, it would be better to understand things like the merge sort to understand.</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>.get()</p>
+</td><td colspan="1" rowspan="1"><p>Retrieving things from a hash table or list</p>
+</td><td colspan="1" rowspan="1"><p>O(1) It only takes one step to retrive an item. Do this for n times, you get a total time complexity of O(1 * n) = O(n)</p>
+</td></tr>
+</table>
+<p>The list above only shows a few examples to get you started. Hope you get the idea!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Data Structures" duration="5">
+        <h2 is-upgraded><strong>Types of data structures</strong></h2>
+<p>There is a non-exhaustive list below for data structures that we can see. As explained above, data structures can be manipulated and they are very special. You need not make every call to store in the database when you can do it on the program itself. </p>
+<table>
+<tr><td colspan="1" rowspan="1"><p><strong>Data Structures</strong></p>
+</td><td colspan="1" rowspan="1"><p><strong>What It Does</strong></p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Stacks and Queues</p>
+</td><td colspan="1" rowspan="1"><p>Stack- data structure that stores as a stack of data. </p>
+<p>Queues- First in and first out. You add element A first, then add element B. In the same order, you remove A first and then B.</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>LinkedList</p>
+</td><td colspan="1" rowspan="1"><p>A data structure that represents a sequence of nodes. Single linked list has one node pointing to another while doubly linked lists have each node pointing both ways. </p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Arrays and String</p>
+</td><td colspan="1" rowspan="1"><p>Basically, you store elements. String is a data structure that you can store anything as long as it is in a form of example &#34;ab&#34;. The elements in an array are normally separated by a &#34;,&#39;</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Trees and Graphs</p>
+</td><td colspan="1" rowspan="1"><p>A tree is a data structure that consists of nodes. </p>
+<p>A tree is a type of graph but not all graphs are trees. The tree is acyclic while the graph is cyclic</p>
+</td></tr>
+</table>
+<p>The above is for you to appreciate so that you know what you are coding.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Sorting algorithms" duration="1">
+        <p>By the end of this section, you should know the following sorting algorithms. </p>
+<h2 is-upgraded><strong>Insertion sort</strong></h2>
+<p>Here&#39;s a gif to get you started on what it is.</p>
+<p class="image-container"><img style="width: 500.00px" src="img/d0ea1076564a0c2d.gif"></p>
+<p>From the above, we can see that for each element, we need to do a comparison one by one! And for each element you compare with other elements and you insert them correctly! This is why the insertion sort is here! You go through the list each time you take the element out, and you compare and then insert.</p>
+<p>Below is the code that shows the insertion sort.</p>
+<p><code>insertion_sort.py</code></p>
+<pre><code>def insertion_sort(arr):
+ # go backwards and compare the elements
+ for element_idx in range(1,len(arr)):
+   el = arr[element_idx]
+   el_behind_idx = element_idx - 1
+
+   while el_behind_idx &gt;= 0 and el &lt; arr[el_behind_idx]:
+     #swap
+     arr[el_behind_idx + 1] = arr[el_behind_idx]
+     el_behind_idx -= 1
+   arr[el_behind_idx + 1] = el
+  
+ return arr
+
+arr = [12, 11, 13, 5, 6]
+print(insertion_sort(arr))</code></pre>
+<p>The code above, describes what is happening in each element of the list. </p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

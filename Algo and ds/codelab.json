@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-10-08T10:41:33Z",
+  "id": "Algo and ds",
+  "duration": 12,
+  "title": "Algorithms and Data Structures",
+  "authors": "caramel_melmel",
+  "summary": "We will summarise what we have learnt from weeks 1 to 3",
+  "source": "182ZmNJghZytmNeysrj23VBQnnhNqjp2IZoBtB1X0G_4",
+  "theme": "web",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "web"
+  ],
+  "tags": [
+    "web"
+  ],
+  "feedback": "https://github.com/googlecodelabs/your-first-pwapp/issues",
+  "url": "Algo and ds"
+}
